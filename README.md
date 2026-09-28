@@ -85,9 +85,7 @@ Settings > General > Theme. The main menu in each of the four.
 |  |  |  |
 |---|---|---|
 | <img src="images/gba-emibios-gyakuten-load.png" width="100%" alt="emibios, the open BIOS, loading Phoenix Wright: Ace Attorney, Trials and Tribulations"> | <img src="images/gba-ace-attorney-trials-and-tribulations.png" width="100%" alt="Phoenix Wright: Ace Attorney, Trials and Tribulations, the title that follows"> | <img src="images/gba-warioware-twisted.png" width="100%" alt="WarioWare: Twisted!"> |
-| emibios, the open BIOS, loading Phoenix Wright: Ace Attorney, Trials and Tribulations | Phoenix Wright: Ace Attorney, Trials and Tribulations, the title that follows | WarioWare: Twisted! |
-| <img src="images/gba-advance-wars.png" width="100%" alt="Advance Wars"> |  |  |
-| Advance Wars |  |  |
+| [emibios](https://github.com/coolbho3k/emibios), the open BIOS, loading Phoenix Wright: Ace Attorney, Trials and Tribulations | Phoenix Wright: Ace Attorney, Trials and Tribulations, the title that follows | WarioWare: Twisted! |
 
 ## Game Boy Advance (MiSTer core)
 
@@ -214,7 +212,7 @@ helper modules.
 
 **Other files on the card**
 
-- emibios, an open replacement Game Boy Advance BIOS (LGPL-3.0).
+- [emibios](https://github.com/coolbho3k/emibios), an open replacement Game Boy Advance BIOS by coolbho3k (LGPL-3.0).
 - crosi12's SGB overlay pack (v1.0), turned into Super Game Boy border files.
 
 **This project**
