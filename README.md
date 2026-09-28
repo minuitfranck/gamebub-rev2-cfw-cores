@@ -95,8 +95,6 @@ Run from a cartridge in the slot.
 |---|---|---|
 | <img src="images/gbam-metal-slug-advance.png" width="100%" alt="Metal Slug Advance"> | <img src="images/gbam-f-zero-maximum-velocity.png" width="100%" alt="F-Zero: Maximum Velocity"> | <img src="images/gbam-dokapon.png" width="100%" alt="Dokapon"> |
 | Metal Slug Advance | F-Zero: Maximum Velocity | Dokapon |
-| <img src="images/gbam-ace-attorney-trials-and-tribulations.png" width="100%" alt="Phoenix Wright: Ace Attorney, Trials and Tribulations"> |  |  |
-| Phoenix Wright: Ace Attorney, Trials and Tribulations |  |  |
 
 ## Super Nintendo
 
