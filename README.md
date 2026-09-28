@@ -148,10 +148,8 @@ Run from a cartridge in the slot.
 
 |  |  |  |
 |---|---|---|
-| <img src="images/sgb-kirbys-dream-land-2.png" width="100%" alt="Kirby's Dream Land 2"> | <img src="images/sgb-bomberman.png" width="100%" alt="Bomberman"> | <img src="images/sgb-detective-conan.png" width="100%" alt="Detective Conan"> |
-| Kirby's Dream Land 2 | Bomberman | Detective Conan |
-| <img src="images/sgb-pokemon-scarlet.png" width="100%" alt="Pokemon Scarlet (fan game)"> |  |  |
-| Pokemon Scarlet (fan game) |  |  |
+| <img src="images/sgb-kirbys-dream-land-2.png" width="100%" alt="Kirby's Dream Land 2"> | <img src="images/sgb-bomberman.png" width="100%" alt="Bomberman"> | <img src="images/sgb-pokemon-scarlet.png" width="100%" alt="Pokemon Scarlet (fan game)"> |
+| Kirby's Dream Land 2 | Bomberman | Pokemon Scarlet (fan game) |
 
 ## Source
 
