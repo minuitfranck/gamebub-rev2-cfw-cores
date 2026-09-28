@@ -210,7 +210,8 @@ helper modules.
 
 **Other files on the card**
 
-- [emibios](https://github.com/coolbho3k/emibios), an open replacement Game Boy Advance BIOS by coolbho3k (LGPL-3.0).
+- [emibios](https://github.com/coolbho3k/emibios) release 0.1.5, an open replacement Game Boy Advance BIOS by coolbho3k
+  (LGPL-3.0); it boots games from the card and cartridges.
 - crosi12's SGB overlay pack (v1.0), turned into Super Game Boy border files.
 
 **This project**
