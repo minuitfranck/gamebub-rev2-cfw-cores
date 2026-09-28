@@ -84,10 +84,10 @@ Settings > General > Theme. The main menu in each of the four.
 
 |  |  |  |
 |---|---|---|
-| <img src="images/gba-warioware-twisted.png" width="100%" alt="WarioWare: Twisted!"> | <img src="images/gba-pokemon-pinball.png" width="100%" alt="Pokemon Pinball: Ruby & Sapphire"> | <img src="images/gba-advance-wars.png" width="100%" alt="Advance Wars"> |
-| WarioWare: Twisted! | Pokemon Pinball: Ruby & Sapphire | Advance Wars |
-| <img src="images/gba-emibios.png" width="100%" alt="emibios, the open BIOS, listing a game from the card"> |  |  |
-| emibios, the open BIOS, listing a game from the card |  |  |
+| <img src="images/gba-emibios.png" width="100%" alt="emibios, the open BIOS, loading Phoenix Wright: Ace Attorney, Trials and Tribulations"> | <img src="images/gba-ace-attorney-trials-and-tribulations.png" width="100%" alt="Phoenix Wright: Ace Attorney, Trials and Tribulations, the title that follows"> | <img src="images/gba-warioware-twisted.png" width="100%" alt="WarioWare: Twisted!"> |
+| emibios, the open BIOS, loading Phoenix Wright: Ace Attorney, Trials and Tribulations | Phoenix Wright: Ace Attorney, Trials and Tribulations, the title that follows | WarioWare: Twisted! |
+| <img src="images/gba-advance-wars.png" width="100%" alt="Advance Wars"> |  |  |
+| Advance Wars |  |  |
 
 ## Game Boy Advance (MiSTer core)
 
