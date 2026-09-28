@@ -46,16 +46,16 @@ The menus in the theme in use, minuitfranck light.
 | Main menu | Cores | A core's page |
 | <img src="images/menu-game-list.png" width="100%" alt="A core's game list"> | <img src="images/menu-home.png" width="100%" alt="Home menu over a game"> | <img src="images/menu-core-panel-gba-mister.png" width="100%" alt="A core's settings over a game (Game Boy Advance, MiSTer core)"> |
 | A core's game list | Home menu over a game | A core's settings over a game (Game Boy Advance, MiSTer core) |
-| <img src="images/menu-tools.png" width="100%" alt="Tools"> | <img src="images/menu-settings.png" width="100%" alt="Settings"> | <img src="images/menu-settings-general.png" width="100%" alt="Settings > General"> |
-| Tools | Settings | Settings > General |
-| <img src="images/menu-settings-general-theme-editing.png" width="100%" alt="Settings > General, choosing the theme"> | <img src="images/menu-settings-hotkeys.png" width="100%" alt="Settings > Hotkeys"> | <img src="images/menu-settings-date-time.png" width="100%" alt="Settings > Date & Time"> |
-| Settings > General, choosing the theme | Settings > Hotkeys | Settings > Date & Time |
-| <img src="images/menu-settings-date-time-editing.png" width="100%" alt="Settings > Date & Time, changing the day"> | <img src="images/menu-settings-cores-builtin.png" width="100%" alt="Settings > Cores: Built-in"> | <img src="images/menu-settings-cores-sd.png" width="100%" alt="Settings > Cores: SD Card"> |
-| Settings > Date & Time, changing the day | Settings > Cores: Built-in | Settings > Cores: SD Card |
-| <img src="images/menu-settings-core-gb-builtin.png" width="100%" alt="Core: GB / GBC (Game Bub)"> | <img src="images/menu-settings-core-gba-builtin.png" width="100%" alt="Core: GBA (Game Bub)"> | <img src="images/menu-settings-core-gb-mister.png" width="100%" alt="Core: GB / GBC (MiSTer)"> |
-| Core: GB / GBC (Game Bub) | Core: GBA (Game Bub) | Core: GB / GBC (MiSTer) |
-| <img src="images/menu-settings-core-mega-drive.png" width="100%" alt="Core: Mega Drive / Genesis"> | <img src="images/menu-about.png" width="100%" alt="About"> |  |
-| Core: Mega Drive / Genesis | About |  |
+| <img src="images/menu-core-panel-mega-drive.png" width="100%" alt="A core's settings over a game (Mega Drive / Genesis)"> | <img src="images/menu-tools.png" width="100%" alt="Tools"> | <img src="images/menu-settings.png" width="100%" alt="Settings"> |
+| A core's settings over a game (Mega Drive / Genesis) | Tools | Settings |
+| <img src="images/menu-settings-general.png" width="100%" alt="Settings > General"> | <img src="images/menu-settings-general-theme-editing.png" width="100%" alt="Settings > General, choosing the theme"> | <img src="images/menu-settings-hotkeys.png" width="100%" alt="Settings > Hotkeys"> |
+| Settings > General | Settings > General, choosing the theme | Settings > Hotkeys |
+| <img src="images/menu-settings-date-time.png" width="100%" alt="Settings > Date & Time"> | <img src="images/menu-settings-date-time-editing.png" width="100%" alt="Settings > Date & Time, changing the day"> | <img src="images/menu-settings-cores-builtin.png" width="100%" alt="Settings > Cores: Built-in"> |
+| Settings > Date & Time | Settings > Date & Time, changing the day | Settings > Cores: Built-in |
+| <img src="images/menu-settings-cores-sd.png" width="100%" alt="Settings > Cores: SD Card"> | <img src="images/menu-settings-core-gb-builtin.png" width="100%" alt="Core: GB / GBC (Game Bub)"> | <img src="images/menu-settings-core-gba-builtin.png" width="100%" alt="Core: GBA (Game Bub)"> |
+| Settings > Cores: SD Card | Core: GB / GBC (Game Bub) | Core: GBA (Game Bub) |
+| <img src="images/menu-settings-core-gb-mister.png" width="100%" alt="Core: GB / GBC (MiSTer)"> | <img src="images/menu-settings-core-mega-drive.png" width="100%" alt="Core: Mega Drive / Genesis"> | <img src="images/menu-about.png" width="100%" alt="About"> |
+| Core: GB / GBC (MiSTer) | Core: Mega Drive / Genesis | About |
 
 ## Themes
 
