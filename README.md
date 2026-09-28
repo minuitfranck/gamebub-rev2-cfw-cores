@@ -35,8 +35,8 @@ Save state: Home + R. Load state: Home + L. Screenshot: Home + Select. Volume an
 |---|---|---|
 | <img src="images/menu-main.png" width="100%" alt="Main menu"> | <img src="images/menu-cores.png" width="100%" alt="Cores"> | <img src="images/menu-game-list.png" width="100%" alt="A core's page"> |
 | Main menu | Cores | A core's page |
-| <img src="images/menu-home.png" width="100%" alt="Home menu over a game"> | <img src="images/menu-core-panel-mega-drive.png" width="100%" alt="A core's settings over the game (Mega Drive)"> | <img src="images/menu-tools.png" width="100%" alt="Tools"> |
-| Home menu over a game | A core's settings over the game (Mega Drive) | Tools |
+| <img src="images/menu-home.png" width="100%" alt="Home menu over a game"> | <img src="images/menu-core-panel-gba-mister.png" width="100%" alt="A core's settings over a game (Game Boy Advance, MiSTer core)"> | <img src="images/menu-tools.png" width="100%" alt="Tools"> |
+| Home menu over a game | A core's settings over a game (Game Boy Advance, MiSTer core) | Tools |
 | <img src="images/menu-settings.png" width="100%" alt="Settings"> | <img src="images/menu-settings-general.png" width="100%" alt="Settings > General"> | <img src="images/menu-settings-hotkeys.png" width="100%" alt="Settings > Hotkeys"> |
 | Settings | Settings > General | Settings > Hotkeys |
 | <img src="images/menu-settings-date-time.png" width="100%" alt="Settings > Date & Time"> | <img src="images/menu-settings-cores-builtin.png" width="100%" alt="Settings > Cores: Built-in"> | <img src="images/menu-settings-cores-sd.png" width="100%" alt="Settings > Cores: SD Card"> |
