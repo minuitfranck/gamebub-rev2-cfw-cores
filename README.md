@@ -82,6 +82,8 @@ Settings > General > Theme. The main menu in each of the four.
 
 ## Game Boy Advance (built in)
 
+Run from a cartridge in the slot.
+
 |  |  |  |
 |---|---|---|
 | <img src="images/gba-emibios-gyakuten-load.png" width="100%" alt="emibios, the open BIOS, loading Phoenix Wright: Ace Attorney, Trials and Tribulations"> | <img src="images/gba-ace-attorney-trials-and-tribulations.png" width="100%" alt="Phoenix Wright: Ace Attorney, Trials and Tribulations, the title that follows"> | <img src="images/gba-warioware-twisted.png" width="100%" alt="WarioWare: Twisted!"> |
