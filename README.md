@@ -63,8 +63,8 @@ Settings > General > Theme. The main menu in each of the four.
 
 |  |  |  |  |
 |---|---|---|---|
-| <img src="images/menu-theme-light-game-bub.png" width="100%" alt="Light Game Bub"> | <img src="images/menu-theme-dark-game-bub.png" width="100%" alt="Dark Game Bub"> | <img src="images/menu-theme-minuitfranck-dark.png" width="100%" alt="minuitfranck dark"> | <img src="images/menu-theme-minuitfranck-light.png" width="100%" alt="minuitfranck light"> |
-| Light Game Bub | Dark Game Bub | minuitfranck dark | minuitfranck light |
+| <img src="images/menu-theme-light-game-bub.png" width="100%" alt="Light Game Bub"> | <img src="images/menu-theme-dark-game-bub.png" width="100%" alt="Dark Game Bub"> | <img src="images/menu-theme-minuitfranck-light.png" width="100%" alt="minuitfranck light"> | <img src="images/menu-theme-minuitfranck-dark.png" width="100%" alt="minuitfranck dark"> |
+| Light Game Bub | Dark Game Bub | minuitfranck light | minuitfranck dark |
 
 ## Game Boy / Game Boy Color (built in)
 
