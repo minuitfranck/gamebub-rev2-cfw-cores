@@ -5,7 +5,7 @@ the SD card, as of 28 September 2026. The pictures are the handheld's own screen
 Not affiliated with, endorsed by or supported by Eli Lipsitz or the Game Bub project.
 
 <p align="center">
-  <img src="images/gamebub-rev2-home.svg" width="36%" alt="A rev2 Game Bub showing its home screen">
+  <img src="images/gamebub-rev2-home.svg" width="36%" alt="A rev2 Game Bub showing its main menu">
   <img src="images/gamebub-rev2-comix-zone.svg" width="36%" alt="A rev2 Game Bub playing Comix Zone">
 </p>
 
@@ -38,20 +38,33 @@ green while a value is being edited, amber on the number under change, and the s
 
 ## Menus
 
+The menus in the theme in use, minuitfranck light.
+
 |  |  |  |
 |---|---|---|
-| <img src="images/menu-main.png" width="100%" alt="Main menu"> | <img src="images/menu-cores.png" width="100%" alt="Cores"> | <img src="images/menu-game-list.png" width="100%" alt="A core's page"> |
+| <img src="images/menu-main.png" width="100%" alt="Main menu"> | <img src="images/menu-cores.png" width="100%" alt="Cores"> | <img src="images/menu-core-detail.png" width="100%" alt="A core's page"> |
 | Main menu | Cores | A core's page |
-| <img src="images/menu-home.png" width="100%" alt="Home menu over a game"> | <img src="images/menu-core-panel-gba-mister.png" width="100%" alt="A core's settings over a game (Game Boy Advance, MiSTer core)"> | <img src="images/menu-tools.png" width="100%" alt="Tools"> |
-| Home menu over a game | A core's settings over a game (Game Boy Advance, MiSTer core) | Tools |
-| <img src="images/menu-settings.png" width="100%" alt="Settings"> | <img src="images/menu-settings-general.png" width="100%" alt="Settings > General"> | <img src="images/menu-settings-hotkeys.png" width="100%" alt="Settings > Hotkeys"> |
-| Settings | Settings > General | Settings > Hotkeys |
-| <img src="images/menu-settings-date-time.png" width="100%" alt="Settings > Date & Time"> | <img src="images/menu-settings-cores-builtin.png" width="100%" alt="Settings > Cores: Built-in"> | <img src="images/menu-settings-cores-sd.png" width="100%" alt="Settings > Cores: SD Card"> |
-| Settings > Date & Time | Settings > Cores: Built-in | Settings > Cores: SD Card |
+| <img src="images/menu-game-list.png" width="100%" alt="A core's game list"> | <img src="images/menu-home.png" width="100%" alt="Home menu over a game"> | <img src="images/menu-core-panel-gba-mister.png" width="100%" alt="A core's settings over a game (Game Boy Advance, MiSTer core)"> |
+| A core's game list | Home menu over a game | A core's settings over a game (Game Boy Advance, MiSTer core) |
+| <img src="images/menu-tools.png" width="100%" alt="Tools"> | <img src="images/menu-settings.png" width="100%" alt="Settings"> | <img src="images/menu-settings-general.png" width="100%" alt="Settings > General"> |
+| Tools | Settings | Settings > General |
+| <img src="images/menu-settings-general-theme-editing.png" width="100%" alt="Settings > General, choosing the theme"> | <img src="images/menu-settings-hotkeys.png" width="100%" alt="Settings > Hotkeys"> | <img src="images/menu-settings-date-time.png" width="100%" alt="Settings > Date & Time"> |
+| Settings > General, choosing the theme | Settings > Hotkeys | Settings > Date & Time |
+| <img src="images/menu-settings-date-time-editing.png" width="100%" alt="Settings > Date & Time, changing the day"> | <img src="images/menu-settings-cores-builtin.png" width="100%" alt="Settings > Cores: Built-in"> | <img src="images/menu-settings-cores-sd.png" width="100%" alt="Settings > Cores: SD Card"> |
+| Settings > Date & Time, changing the day | Settings > Cores: Built-in | Settings > Cores: SD Card |
 | <img src="images/menu-settings-core-gb-builtin.png" width="100%" alt="Core: GB / GBC (Game Bub)"> | <img src="images/menu-settings-core-gba-builtin.png" width="100%" alt="Core: GBA (Game Bub)"> | <img src="images/menu-settings-core-gb-mister.png" width="100%" alt="Core: GB / GBC (MiSTer)"> |
 | Core: GB / GBC (Game Bub) | Core: GBA (Game Bub) | Core: GB / GBC (MiSTer) |
 | <img src="images/menu-settings-core-mega-drive.png" width="100%" alt="Core: Mega Drive / Genesis"> | <img src="images/menu-about.png" width="100%" alt="About"> |  |
 | Core: Mega Drive / Genesis | About |  |
+
+## Themes
+
+Settings > General > Theme. The main menu in each of the four.
+
+|  |  |  |  |
+|---|---|---|---|
+| <img src="images/menu-theme-light-game-bub.png" width="100%" alt="Light Game Bub"> | <img src="images/menu-theme-dark-game-bub.png" width="100%" alt="Dark Game Bub"> | <img src="images/menu-theme-minuitfranck-dark.png" width="100%" alt="minuitfranck dark"> | <img src="images/menu-theme-minuitfranck-light.png" width="100%" alt="minuitfranck light"> |
+| Light Game Bub | Dark Game Bub | minuitfranck dark | minuitfranck light |
 
 ## Game Boy / Game Boy Color (built in)
 
