@@ -1,6 +1,6 @@
 # Game Bub rev2: firmware and cores
 
-A rev2 (vertical) [Game Bub](https://github.com/elipsitz/gamebub) running community firmware and cores loaded from
+A rev2 (vertical) [Game Bub](https://github.com/elipsitz/gamebub) running custom firmware and cores loaded from
 the SD card, as of 28 September 2026. The pictures are the handheld's own screenshots, enlarged three times.
 Not affiliated with, endorsed by or supported by Eli Lipsitz or the Game Bub project.
 
@@ -13,7 +13,7 @@ Not affiliated with, endorsed by or supported by Eli Lipsitz or the Game Bub pro
 
 | Part | Version | Battery saves | Save states |
 |---|---|---|---|
-| Firmware | r2-17s, a fork of Game Bub 1.1.0-beta2 | | |
+| Firmware | r2-17s, a fork of Game Bub firmware 1.1.0-beta2 | | |
 | Game Boy / Game Boy Color, built in | v1.0.2, rev2 build | yes | no |
 | Game Boy Advance, built in | v1.0.2, rev2 build | yes | no |
 | Game Boy / Game Boy Color, MiSTer core | r2.11 | yes | yes |
@@ -33,117 +33,109 @@ Save state: Home + R. Load state: Home + L. Screenshot: Home + Select. Volume an
 
 |  |  |  |
 |---|---|---|
-| <img src="images/gallery-menus-game-bub-theme.png" width="100%" alt="Home screen"> | <img src="images/now-game-list.png" width="100%" alt="Game list"> | <img src="images/menu-cores-list-r2-17o.png" width="100%" alt="Cores list"> |
-| Home screen | Game list | Cores list |
-| <img src="images/now-in-game-menu.png" width="100%" alt="In-game menu"> | <img src="images/now-core-settings.png" width="100%" alt="A core's settings over the game"> | <img src="images/gallery-menus-home-menu.png" width="100%" alt="Home menu over a game"> |
-| In-game menu | A core's settings over the game | Home menu over a game |
-| <img src="images/gallery-menus-dark-game-bub-general.png" width="100%" alt="Settings > General"> | <img src="images/now-tools.png" width="100%" alt="Tools"> | <img src="images/gallery-menus-tools-system-info.png" width="100%" alt="Tools with System Info"> |
-| Settings > General | Tools | System Info |
-| <img src="images/theme-gamebub-game-list.png" width="100%" alt="Dark Game Bub theme"> | <img src="images/diary-2026-09-26-light-game-bub-list.png" width="100%" alt="Light Game Bub theme"> | <img src="images/now-about.png" width="100%" alt="About"> |
-| Dark Game Bub theme | Light Game Bub theme | About |
+| <img src="images/menu-main.png" width="100%" alt="Main menu"> | <img src="images/menu-cores.png" width="100%" alt="Cores"> | <img src="images/menu-game-list.png" width="100%" alt="A core's page"> |
+| Main menu | Cores | A core's page |
+| <img src="images/menu-home.png" width="100%" alt="Home menu over a game"> | <img src="images/menu-core-panel-mega-drive.png" width="100%" alt="A core's settings over the game (Mega Drive)"> | <img src="images/menu-tools.png" width="100%" alt="Tools"> |
+| Home menu over a game | A core's settings over the game (Mega Drive) | Tools |
+| <img src="images/menu-settings.png" width="100%" alt="Settings"> | <img src="images/menu-settings-general.png" width="100%" alt="Settings > General"> | <img src="images/menu-settings-hotkeys.png" width="100%" alt="Settings > Hotkeys"> |
+| Settings | Settings > General | Settings > Hotkeys |
+| <img src="images/menu-settings-date-time.png" width="100%" alt="Settings > Date & Time"> | <img src="images/menu-settings-cores-builtin.png" width="100%" alt="Settings > Cores: Built-in"> | <img src="images/menu-settings-cores-sd.png" width="100%" alt="Settings > Cores: SD Card"> |
+| Settings > Date & Time | Settings > Cores: Built-in | Settings > Cores: SD Card |
+| <img src="images/menu-settings-core-gb-builtin.png" width="100%" alt="Core: GB / GBC (Game Bub)"> | <img src="images/menu-settings-core-gba-builtin.png" width="100%" alt="Core: GBA (Game Bub)"> | <img src="images/menu-settings-core-gb-mister.png" width="100%" alt="Core: GB / GBC (MiSTer)"> |
+| Core: GB / GBC (Game Bub) | Core: GBA (Game Bub) | Core: GB / GBC (MiSTer) |
+| <img src="images/menu-settings-core-mega-drive.png" width="100%" alt="Core: Mega Drive / Genesis"> | <img src="images/menu-about.png" width="100%" alt="About"> |  |
+| Core: Mega Drive / Genesis | About |  |
 
 ## Game Boy / Game Boy Color (built in)
 
 |  |  |  |
 |---|---|---|
-| <img src="images/gallery-gb-pokemon-card-gb-title.png" width="100%" alt="Pokemon Card GB"> | <img src="images/gallery-gb-pokemon-card-gb-card.png" width="100%" alt="Pokemon Card GB, a card"> | <img src="images/gallery-gb-bomberman-stage.png" width="100%" alt="Bomberman"> |
-| Pokemon Card GB | Pokemon Card GB | Bomberman |
+| <img src="images/gb-pokemon-card-gb.png" width="100%" alt="Pokemon Card GB"> | <img src="images/gb-bomberman.png" width="100%" alt="Bomberman GB"> |  |
+| Pokemon Card GB | Bomberman GB |  |
 
 ## Game Boy / Game Boy Color (MiSTer core)
 
 |  |  |  |
 |---|---|---|
-| <img src="images/gallery-gbm-shantae-bridge.png" width="100%" alt="Shantae"> | <img src="images/gallery-gbm-kdl2.png" width="100%" alt="Kirby's Dream Land 2"> | <img src="images/gallery-gbm-scarlet-pokedex.png" width="100%" alt="Pokemon Scarlet"> |
-| Shantae | Kirby's Dream Land 2 | Pokemon Scarlet (fan game) |
-| <img src="images/gallery-gbm-links-awakening-border.png" width="100%" alt="Link's Awakening Redux with a border"> | <img src="images/gallery-gbm-kdl2-border.png" width="100%" alt="Kirby's Dream Land 2 with its Super Game Boy border"> | <img src="images/gallery-gbm-scarlet-house-border.png" width="100%" alt="Pokemon Scarlet with a border, whole view"> |
-| Link's Awakening Redux, border file, Zoomed 2x | Kirby's Dream Land 2, Super Game Boy border | Pokemon Scarlet, border file, Whole view |
+| <img src="images/gbm-shantae.png" width="100%" alt="Shantae"> | <img src="images/gbm-kirbys-dream-land-2.png" width="100%" alt="Kirby's Dream Land 2, Super Game Boy border"> | <img src="images/gbm-pokemon-scarlet.png" width="100%" alt="Pokemon Scarlet (fan game)"> |
+| Shantae | Kirby's Dream Land 2, Super Game Boy border | Pokemon Scarlet (fan game) |
+| <img src="images/gbm-links-awakening-redux.png" width="100%" alt="Link's Awakening Redux, border file"> |  |  |
+| Link's Awakening Redux, border file |  |  |
 
 ## Game Boy Advance (built in)
 
 |  |  |  |
 |---|---|---|
-| <img src="images/gallery-gba-warioware-story.png" width="100%" alt="WarioWare: Twisted!"> | <img src="images/gallery-gba-warioware-skyscraper.png" width="100%" alt="WarioWare: Twisted!, a microgame"> | <img src="images/gallery-gba-pokemon-pinball-rs.png" width="100%" alt="Pokemon Pinball: Ruby & Sapphire"> |
-| WarioWare: Twisted! | WarioWare: Twisted! | Pokemon Pinball: Ruby & Sapphire |
-| <img src="images/gallery-gba-emibios-list.png" width="100%" alt="emibios listing a game from the card"> | <img src="images/gallery-gba-advance-wars.png" width="100%" alt="Advance Wars"> | <img src="images/gallery-gba-pokemon-pinball-rs-2.png" width="100%" alt="Pokemon Pinball, another part of the table"> |
-| emibios (open BIOS) listing a game from the card | Advance Wars, started through emibios | Pokemon Pinball: Ruby & Sapphire |
+| <img src="images/gba-warioware-twisted.png" width="100%" alt="WarioWare: Twisted!"> | <img src="images/gba-pokemon-pinball.png" width="100%" alt="Pokemon Pinball: Ruby & Sapphire"> | <img src="images/gba-advance-wars.png" width="100%" alt="Advance Wars"> |
+| WarioWare: Twisted! | Pokemon Pinball: Ruby & Sapphire | Advance Wars |
+| <img src="images/gba-emibios.png" width="100%" alt="emibios, the open BIOS, listing a game from the card"> |  |  |
+| emibios, the open BIOS, listing a game from the card |  |  |
 
 ## Game Boy Advance (MiSTer core)
 
 |  |  |  |
 |---|---|---|
-| <img src="images/gallery-gbam-metal-slug.png" width="100%" alt="Metal Slug Advance"> | <img src="images/gallery-gbam-f-zero.png" width="100%" alt="F-Zero: Maximum Velocity"> | <img src="images/gbam-f-zero-2.png" width="100%" alt="F-Zero: Maximum Velocity, another track"> |
-| Metal Slug Advance | F-Zero: Maximum Velocity | F-Zero: Maximum Velocity |
-| <img src="images/gallery-gbam-kirby-amazing-mirror.png" width="100%" alt="Kirby & the Amazing Mirror"> | <img src="images/gallery-gbam-dokapon.png" width="100%" alt="Dokapon"> | <img src="images/gba-ace-attorney-trials-and-tribulations.png" width="100%" alt="Phoenix Wright: Ace Attorney, Trials and Tribulations"> |
-| Kirby & the Amazing Mirror | Dokapon | Phoenix Wright: Ace Attorney, Trials and Tribulations |
-| <img src="images/gallery-gbam-core-settings.png" width="100%" alt="The core's settings"> |  |  |
-| The core's settings: save states, real-time clock, Color Corrections, Flicker Blend |  |  |
+| <img src="images/gbam-metal-slug-advance.png" width="100%" alt="Metal Slug Advance"> | <img src="images/gbam-f-zero-maximum-velocity.png" width="100%" alt="F-Zero: Maximum Velocity"> | <img src="images/gbam-kirby-amazing-mirror.png" width="100%" alt="Kirby & the Amazing Mirror"> |
+| Metal Slug Advance | F-Zero: Maximum Velocity | Kirby & the Amazing Mirror |
+| <img src="images/gbam-dokapon.png" width="100%" alt="Dokapon"> | <img src="images/gbam-ace-attorney-trials-and-tribulations.png" width="100%" alt="Phoenix Wright: Ace Attorney, Trials and Tribulations"> |  |
+| Dokapon | Phoenix Wright: Ace Attorney, Trials and Tribulations |  |
 
 ## Super Nintendo
 
 |  |  |  |
 |---|---|---|
-| <img src="images/gallery-snes-yoshis-island.png" width="100%" alt="Yoshi's Island"> | <img src="images/snes-yoshis-island-2.png" width="100%" alt="Yoshi's Island, a bonus"> | <img src="images/gallery-snes-super-mario-world.png" width="100%" alt="Super Mario World"> |
-| Yoshi's Island (Super FX 2) | Yoshi's Island | Super Mario World |
-| <img src="images/gallery-snes-turtles-in-time.png" width="100%" alt="Turtles in Time"> | <img src="images/gallery-snes-mega-man-x2.png" width="100%" alt="Mega Man X2"> | <img src="images/gallery-snes-bs-zelda.png" width="100%" alt="BS Zelda: Ancient Stone Tablets"> |
-| Turtles in Time | Mega Man X2 (Cx4) | BS Zelda: Ancient Stone Tablets |
-| <img src="images/gallery-snes-parodius.png" width="100%" alt="Parodius"> | <img src="images/snes-bust-a-move.png" width="100%" alt="Bust-A-Move"> |  |
-| Parodius | Bust-A-Move |  |
+| <img src="images/snes-yoshis-island.png" width="100%" alt="Yoshi's Island"> | <img src="images/snes-super-mario-world.png" width="100%" alt="Super Mario World"> | <img src="images/snes-turtles-in-time.png" width="100%" alt="Turtles in Time"> |
+| Yoshi's Island | Super Mario World | Turtles in Time |
+| <img src="images/snes-mega-man-x2.png" width="100%" alt="Mega Man X2"> | <img src="images/snes-bs-zelda.png" width="100%" alt="BS Zelda: Ancient Stone Tablets"> | <img src="images/snes-bust-a-move.png" width="100%" alt="Bust-A-Move"> |
+| Mega Man X2 | BS Zelda: Ancient Stone Tablets | Bust-A-Move |
+| <img src="images/snes-parodius.png" width="100%" alt="Parodius"> |  |  |
+| Parodius |  |  |
 
 ## NES / Famicom
 
 |  |  |  |
 |---|---|---|
-| <img src="images/gallery-nes-kirby.png" width="100%" alt="Kirby's Adventure"> | <img src="images/gallery-nes-light-from-within-overworld.png" width="100%" alt="Light From Within, overworld"> | <img src="images/nes-light-from-within-title.png" width="100%" alt="Light From Within, title"> |
-| Kirby's Adventure | Light From Within (homebrew, mapper 30) | Light From Within |
-| <img src="images/gallery-nes-journey-into-the-unknown.png" width="100%" alt="A Journey Into The Unknown"> |  |  |
-| A Journey Into The Unknown (homebrew) |  |  |
+| <img src="images/nes-kirbys-adventure.png" width="100%" alt="Kirby's Adventure"> | <img src="images/nes-light-from-within.png" width="100%" alt="Light From Within (homebrew)"> | <img src="images/nes-journey-into-the-unknown.png" width="100%" alt="A Journey Into The Unknown (homebrew)"> |
+| Kirby's Adventure | Light From Within (homebrew) | A Journey Into The Unknown (homebrew) |
 
 ## PC Engine / TurboGrafx-16
 
 |  |  |  |
 |---|---|---|
-| <img src="images/gallery-pce-neutopia.png" width="100%" alt="Neutopia"> | <img src="images/gallery-pce-street-fighter-2.png" width="100%" alt="Street Fighter II'"> | <img src="images/pce-street-fighter-2-2.png" width="100%" alt="Street Fighter II', another round"> |
-| Neutopia | Street Fighter II' | Street Fighter II' |
-| <img src="images/gallery-pce-bomberman-93.png" width="100%" alt="Bomberman '93"> |  |  |
-| Bomberman '93 |  |  |
+| <img src="images/pce-neutopia.png" width="100%" alt="Neutopia"> | <img src="images/pce-street-fighter-2.png" width="100%" alt="Street Fighter II'"> | <img src="images/pce-bomberman-93.png" width="100%" alt="Bomberman '93"> |
+| Neutopia | Street Fighter II' | Bomberman '93 |
 
 ## Mega Drive / Genesis
 
 |  |  |  |
 |---|---|---|
-| <img src="images/gallery-md-gunstar-heroes.png" width="100%" alt="Gunstar Heroes"> | <img src="images/md-gunstar-heroes-2.png" width="100%" alt="Gunstar Heroes, another stage"> | <img src="images/gallery-md-comix-zone-command-center.png" width="100%" alt="Comix Zone"> |
-| Gunstar Heroes | Gunstar Heroes | Comix Zone |
-| <img src="images/gallery-md-comix-zone-that-hurt.png" width="100%" alt="Comix Zone, a fight"> | <img src="images/md-comix-zone-stage-1.png" width="100%" alt="Comix Zone, the first stage"> | <img src="images/gallery-md-sonic-3.png" width="100%" alt="Sonic 3 data select"> |
-| Comix Zone | Comix Zone | Sonic 3, data select (battery saves) |
-| <img src="images/gallery-md-phantasy-star-iv.png" width="100%" alt="Phantasy Star IV"> | <img src="images/diary-2026-09-25-md-vectorman.png" width="100%" alt="Vectorman"> |  |
-| Phantasy Star IV | Vectorman, Smooth filter |  |
+| <img src="images/md-comix-zone.png" width="100%" alt="Comix Zone"> | <img src="images/md-gunstar-heroes.png" width="100%" alt="Gunstar Heroes"> | <img src="images/md-sonic-3.png" width="100%" alt="Sonic the Hedgehog 3"> |
+| Comix Zone | Gunstar Heroes | Sonic the Hedgehog 3 |
+| <img src="images/md-phantasy-star-iv.png" width="100%" alt="Phantasy Star IV"> | <img src="images/md-vectorman.png" width="100%" alt="Vectorman"> | <img src="images/md-rocket-knight-adventures.png" width="100%" alt="Rocket Knight Adventures"> |
+| Phantasy Star IV | Vectorman | Rocket Knight Adventures |
 
 ## Neo Geo Pocket Color
 
 |  |  |  |
 |---|---|---|
-| <img src="images/gallery-ngpc-kof-r1-fight.png" width="100%" alt="The King of Fighters R-1"> | <img src="images/ngpc-kof-r1-mono.png" width="100%" alt="The King of Fighters R-1 in monochrome mode"> | <img src="images/gallery-ngpc-kof-battle-de-paradise.png" width="100%" alt="The King of Fighters: Battle de Paradise"> |
-| The King of Fighters R-1 | The King of Fighters R-1, monochrome | The King of Fighters: Battle de Paradise |
-| <img src="images/gallery-ngpc-biomotor-unitron.png" width="100%" alt="Biomotor Unitron"> |  |  |
-| Biomotor Unitron |  |  |
+| <img src="images/ngpc-king-of-fighters-r1.png" width="100%" alt="The King of Fighters R-1"> | <img src="images/ngpc-kof-battle-de-paradise.png" width="100%" alt="The King of Fighters: Battle de Paradise"> | <img src="images/ngpc-biomotor-unitron.png" width="100%" alt="Biomotor Unitron"> |
+| The King of Fighters R-1 | The King of Fighters: Battle de Paradise | Biomotor Unitron |
 
 ## WonderSwan / WonderSwan Color
 
 |  |  |  |
 |---|---|---|
-| <img src="images/gallery-ws-dicing-knight-floor.png" width="100%" alt="Dicing Knight"> | <img src="images/gallery-ws-inuyasha.png" width="100%" alt="Inuyasha"> | <img src="images/gallery-ws-dicing-knight.png" width="100%" alt="Dicing Knight, title"> |
-| Dicing Knight | Inuyasha | Dicing Knight |
-| <img src="images/ws-swan-crystal-boot.png" width="100%" alt="SwanCrystal boot screen"> |  |  |
-| SwanCrystal boot screen |  |  |
+| <img src="images/ws-dicing-knight.png" width="100%" alt="Dicing Knight"> | <img src="images/ws-inuyasha.png" width="100%" alt="Inuyasha"> |  |
+| Dicing Knight | Inuyasha |  |
 
 ## Super Game Boy
 
 |  |  |  |
 |---|---|---|
-| <img src="images/gallery-sgb-bomberman.png" width="100%" alt="Bomberman in its border"> | <img src="images/gallery-sgb-kdl2.png" width="100%" alt="Kirby's Dream Land 2 in its border"> | <img src="images/gallery-sgb-conan.png" width="100%" alt="Detective Conan in its border"> |
-| Bomberman | Kirby's Dream Land 2 | Detective Conan |
-| <img src="images/sgb-scarlet.png" width="100%" alt="Pokemon Scarlet in a border"> | <img src="images/sgb-scarlet-2.png" width="100%" alt="Pokemon Scarlet in a border, another scene"> |  |
-| Pokemon Scarlet | Pokemon Scarlet |  |
+| <img src="images/sgb-kirbys-dream-land-2.png" width="100%" alt="Kirby's Dream Land 2"> | <img src="images/sgb-bomberman.png" width="100%" alt="Bomberman"> | <img src="images/sgb-detective-conan.png" width="100%" alt="Detective Conan"> |
+| Kirby's Dream Land 2 | Bomberman | Detective Conan |
+| <img src="images/sgb-pokemon-scarlet.png" width="100%" alt="Pokemon Scarlet (fan game)"> |  |  |
+| Pokemon Scarlet (fan game) |  |  |
 
 ## Source
 
