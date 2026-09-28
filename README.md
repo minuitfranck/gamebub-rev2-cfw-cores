@@ -70,8 +70,8 @@ Settings > General > Theme. The main menu in each of the four.
 
 |  |  |  |
 |---|---|---|
-| <img src="images/gb-pokemon-card-gb.png" width="100%" alt="Pokemon Card GB"> | <img src="images/gb-bomberman.png" width="100%" alt="Bomberman GB"> |  |
-| Pokemon Card GB | Bomberman GB |  |
+| <img src="images/gb-pokemon-card-gb.png" width="100%" alt="Pokemon Card GB"> | <img src="images/gb-bomberman.png" width="100%" alt="Bomberman GB"> | <img src="images/gb-tetris-rosy-retrospection.png" width="100%" alt="Tetris, Rosy Retrospection (color hack)"> |
+| Pokemon Card GB | Bomberman GB | Tetris, Rosy Retrospection (color hack) |
 
 ## Game Boy / Game Boy Color (MiSTer core)
 
