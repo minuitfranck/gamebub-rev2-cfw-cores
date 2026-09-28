@@ -77,8 +77,8 @@ Settings > General > Theme. The main menu in each of the four.
 
 |  |  |  |
 |---|---|---|
-| <img src="images/gbm-metal-gear-solid.png" width="100%" alt="Metal Gear Solid"> | <img src="images/gbm-detective-conan.png" width="100%" alt="Detective Conan, border file"> | <img src="images/gbm-links-awakening-redux.png" width="100%" alt="Link's Awakening Redux, border file"> |
-| Metal Gear Solid | Detective Conan, border file | Link's Awakening Redux, border file |
+| <img src="images/gbm-detective-conan.png" width="100%" alt="Detective Conan, border file"> | <img src="images/gbm-links-awakening-redux.png" width="100%" alt="Link's Awakening Redux, border file"> | <img src="images/gbm-pokemon-coral.png" width="100%" alt="Pokemon Coral (fan game)"> |
+| Detective Conan, border file | Link's Awakening Redux, border file | Pokemon Coral (fan game) |
 
 ## Game Boy Advance (built in)
 
