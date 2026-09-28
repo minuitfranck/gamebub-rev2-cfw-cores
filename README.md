@@ -77,8 +77,8 @@ Settings > General > Theme. The main menu in each of the four.
 
 |  |  |  |
 |---|---|---|
-| <img src="images/gbm-shantae.png" width="100%" alt="Shantae"> | <img src="images/gbm-kirbys-dream-land-2.png" width="100%" alt="Kirby's Dream Land 2, Super Game Boy border"> | <img src="images/gbm-pokemon-scarlet.png" width="100%" alt="Pokemon Scarlet (fan game)"> |
-| Shantae | Kirby's Dream Land 2, Super Game Boy border | Pokemon Scarlet (fan game) |
+| <img src="images/gbm-shantae.png" width="100%" alt="Shantae"> | <img src="images/gbm-detective-conan.png" width="100%" alt="Detective Conan, border file"> | <img src="images/gbm-pokemon-scarlet.png" width="100%" alt="Pokemon Scarlet (fan game)"> |
+| Shantae | Detective Conan, border file | Pokemon Scarlet (fan game) |
 | <img src="images/gbm-links-awakening-redux.png" width="100%" alt="Link's Awakening Redux, border file"> |  |  |
 | Link's Awakening Redux, border file |  |  |
 
