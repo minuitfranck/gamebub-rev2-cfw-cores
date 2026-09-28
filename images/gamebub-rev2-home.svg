@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-3 -3 101.1 146" width="350" height="506">
+  <title>Game Bub rev2 showing its home screen (illustration with a real screenshot)</title>
+  <desc>Simplified front-view illustration of the Game Bub rev2 handheld shell, proportioned from the measured shell geometry (95.1 x 140 mm face, R5 corners).</desc>
+  <defs>
+    <linearGradient id="shellGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f6f5f1"/>
+      <stop offset="100%" stop-color="#e3e0d8"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1.2" stdDeviation="1.4" flood-color="#000000" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <!-- shell body: 95.1 x 140 mm, R5 corners -->
+  <rect x="0" y="0" width="95.1" height="140" rx="5" ry="5" fill="url(#shellGrad)" stroke="#c7c4ba" stroke-width="0.6" filter="url(#softShadow)"/>
+
+  <!-- screen glass pocket: 92.1 x 67.9 -->
+  <rect x="1.5" y="1.5" width="92.1" height="67.9" rx="3" ry="3" fill="#1b1c1f"/>
+  <!-- LCD active area: 84.0 x 55.8, centered in the pocket -->
+  <rect x="5.53" y="7.55" width="84.04" height="55.76" rx="1.2" fill="#06080c"/>
+  <clipPath id="lcdClip"><rect x="5.53" y="7.55" width="84.04" height="55.76" rx="1.2"/></clipPath>
+  <image x="5.530" y="7.550" width="84.040" height="55.760" preserveAspectRatio="none" clip-path="url(#lcdClip)" style="image-rendering:pixelated;image-rendering:crisp-edges" href="data:image/png;base64,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"/>
+  <polygon points="6.98,9 26.98,9 12.98,40 6.98,40" fill="#ffffff" opacity="0.05"/>
+  <!-- status LED: small opening at the bottom-right corner of the screen bezel -->
+  <circle cx="90.3" cy="66.3" r="1.5" fill="#0c0d10"/>
+  <circle cx="90.3" cy="66.3" r="0.8" fill="#d9ddd0"/>
+
+  <!-- D-pad: opening centred at (-27.55, 46) from device centre -->
+  <circle cx="20" cy="94" r="14.5" fill="#dcdad2" stroke="#c7c4ba" stroke-width="0.4"/>
+  <rect x="8" y="90" width="24" height="8" rx="1.6" fill="#37373a"/>
+  <rect x="16" y="82" width="8" height="24" rx="1.6" fill="#37373a"/>
+
+  <!-- ABXY: opening centred at (27.55, 46) -->
+  <circle cx="75.1" cy="94" r="14.5" fill="#dcdad2" stroke="#c7c4ba" stroke-width="0.4"/>
+  <circle cx="75.1" cy="85" r="4.3" fill="#37373a" stroke="#232325" stroke-width="0.3"/>
+  <circle cx="84.1" cy="94" r="4.3" fill="#37373a" stroke="#232325" stroke-width="0.3"/>
+  <circle cx="75.1" cy="103" r="4.3" fill="#37373a" stroke="#232325" stroke-width="0.3"/>
+  <circle cx="66.1" cy="94" r="4.3" fill="#37373a" stroke="#232325" stroke-width="0.3"/>
+
+  <!-- Home: Ø9.2 at (0, 32.3), debossed ring around the button; button matches select/start size -->
+  <circle cx="47.55" cy="107.7" r="4.08" fill="#c7c4ba"/>
+  <circle cx="47.55" cy="107.7" r="3.18" fill="url(#shellGrad)"/>
+  <circle cx="47.55" cy="107.7" r="2.38" fill="#37373a" stroke="#232325" stroke-width="0.3"/>
+
+  <!-- Start / Select: debossed slot at (0, 16.65) holding two round buttons (70% of original size), ring brought in snug around them -->
+  <rect x="39.47" y="119.27" width="16.16" height="8.16" rx="4.08" fill="#c7c4ba"/>
+  <rect x="40.37" y="120.17" width="14.36" height="6.36" rx="3.18" fill="url(#shellGrad)"/>
+  <circle cx="43.55" cy="123.35" r="2.38" fill="#37373a" stroke="#232325" stroke-width="0.3"/>
+  <circle cx="51.55" cy="123.35" r="2.38" fill="#37373a" stroke="#232325" stroke-width="0.3"/>
+
+  <!-- speaker grilles, lower left and right corners -->
+  <g fill="#8f8c82">
+    <g id="grilleL">
+      <circle cx="12.9" cy="132.5" r="0.5"/><circle cx="14.1" cy="132.5" r="0.5"/><circle cx="15.3" cy="132.5" r="0.5"/><circle cx="16.5" cy="132.5" r="0.5"/><circle cx="17.7" cy="132.5" r="0.5"/><circle cx="18.9" cy="132.5" r="0.5"/><circle cx="20.1" cy="132.5" r="0.5"/>
+      <circle cx="12.9" cy="133.7" r="0.5"/><circle cx="14.1" cy="133.7" r="0.5"/><circle cx="15.3" cy="133.7" r="0.5"/><circle cx="16.5" cy="133.7" r="0.5"/><circle cx="17.7" cy="133.7" r="0.5"/><circle cx="18.9" cy="133.7" r="0.5"/><circle cx="20.1" cy="133.7" r="0.5"/>
+      <circle cx="12.9" cy="134.9" r="0.5"/><circle cx="14.1" cy="134.9" r="0.5"/><circle cx="15.3" cy="134.9" r="0.5"/><circle cx="16.5" cy="134.9" r="0.5"/><circle cx="17.7" cy="134.9" r="0.5"/><circle cx="18.9" cy="134.9" r="0.5"/><circle cx="20.1" cy="134.9" r="0.5"/>
+      <circle cx="12.9" cy="136.1" r="0.5"/><circle cx="14.1" cy="136.1" r="0.5"/><circle cx="15.3" cy="136.1" r="0.5"/><circle cx="16.5" cy="136.1" r="0.5"/><circle cx="17.7" cy="136.1" r="0.5"/><circle cx="18.9" cy="136.1" r="0.5"/><circle cx="20.1" cy="136.1" r="0.5"/>
+    </g>
+    <use href="#grilleL" x="62.1" y="0"/>
+  </g>
+
+  <!-- power button: right edge, near the top of the screen bezel -->
+  <rect x="95.1" y="15.4" width="2.2" height="6.3" rx="1" fill="#37373a"/>
+  <!-- volume toggle: left edge, two segments -->
+  <rect x="-2.2" y="28" width="2.2" height="6" rx="1" fill="#37373a"/>
+  <rect x="-2.2" y="38" width="2.2" height="6" rx="1" fill="#37373a"/>
+</svg>
