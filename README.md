@@ -13,7 +13,7 @@ Not affiliated with, endorsed by or supported by Eli Lipsitz or the Game Bub pro
 
 | Part | Version | Battery saves | Save states |
 |---|---|---|---|
-| Firmware | r2-17s, a fork of Game Bub firmware 1.1.0-beta2 | | |
+| Firmware | r2-17u, a fork of Game Bub firmware 1.1.0-beta2 | | |
 | Game Boy / Game Boy Color, built in | v1.0.2, rev2 build | yes | no |
 | Game Boy Advance, built in | v1.0.2, rev2 build | yes | no |
 | Game Boy / Game Boy Color, MiSTer core | r2.11 | yes | yes |
@@ -28,6 +28,13 @@ Not affiliated with, endorsed by or supported by Eli Lipsitz or the Game Bub pro
 
 Save state: Home + R. Load state: Home + L. Screenshot: Home + Select. Volume and brightness: Home + a direction.
 2x speed on the MiSTer Game Boy and Game Boy Advance cores: Home + Start. The clock is set from a PC over USB.
+
+Beyond Game Bub firmware 1.1.0-beta2: cores loaded from the SD card, each with a settings page; hotkeys for save
+states, 2x speed and screenshots, each of which can be switched off; rumble levels; auto power off; a GBA BIOS
+choice; checked save reads; the same loudness on every core; a console over USB for tests and for setting the
+clock from a PC; four menu themes: Light Game Bub, Dark Game Bub, minuitfranck dark and minuitfranck light. The
+minuitfranck themes take the colors of [minuitfranck.com](https://minuitfranck.com): lavender for the cursor,
+green while a value is being edited, amber on the number under change, and the site's banner on the main menu.
 
 ## Menus
 
