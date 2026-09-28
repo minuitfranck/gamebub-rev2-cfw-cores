@@ -93,10 +93,10 @@ Run from a cartridge in the slot.
 
 |  |  |  |
 |---|---|---|
-| <img src="images/gbam-metal-slug-advance.png" width="100%" alt="Metal Slug Advance"> | <img src="images/gbam-f-zero-maximum-velocity.png" width="100%" alt="F-Zero: Maximum Velocity"> | <img src="images/gbam-kirby-amazing-mirror.png" width="100%" alt="Kirby & the Amazing Mirror"> |
-| Metal Slug Advance | F-Zero: Maximum Velocity | Kirby & the Amazing Mirror |
-| <img src="images/gbam-dokapon.png" width="100%" alt="Dokapon"> | <img src="images/gbam-ace-attorney-trials-and-tribulations.png" width="100%" alt="Phoenix Wright: Ace Attorney, Trials and Tribulations"> |  |
-| Dokapon | Phoenix Wright: Ace Attorney, Trials and Tribulations |  |
+| <img src="images/gbam-metal-slug-advance.png" width="100%" alt="Metal Slug Advance"> | <img src="images/gbam-f-zero-maximum-velocity.png" width="100%" alt="F-Zero: Maximum Velocity"> | <img src="images/gbam-dokapon.png" width="100%" alt="Dokapon"> |
+| Metal Slug Advance | F-Zero: Maximum Velocity | Dokapon |
+| <img src="images/gbam-ace-attorney-trials-and-tribulations.png" width="100%" alt="Phoenix Wright: Ace Attorney, Trials and Tribulations"> |  |  |
+| Phoenix Wright: Ace Attorney, Trials and Tribulations |  |  |
 
 ## Super Nintendo
 
