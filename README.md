@@ -13,7 +13,7 @@ Not affiliated with, endorsed by or supported by Eli Lipsitz or the Game Bub pro
 
 | Part | Version | Battery saves | Save states |
 |---|---|---|---|
-| Firmware | r2-18b, a fork of Game Bub firmware 1.1.0-beta2 | | |
+| Firmware | r2-18c, a fork of Game Bub firmware 1.1.0-beta2 | | |
 | Game Boy / Game Boy Color, built in | v1.0.2, rev2 build | yes | no |
 | Game Boy Advance, built in | v1.0.2, rev2 build | yes | no |
 | Game Boy / Game Boy Color, MiSTer core | r2.12 | yes | yes |
