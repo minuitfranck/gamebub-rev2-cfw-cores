@@ -13,11 +13,11 @@ Not affiliated with, endorsed by or supported by Eli Lipsitz or the Game Bub pro
 
 | Part | Version | Battery saves | Save states |
 |---|---|---|---|
-| Firmware | r2-18c, a fork of Game Bub firmware 1.1.0-beta2 | | |
+| Firmware | r2-18d, a fork of Game Bub firmware 1.1.0-beta2 | | |
 | Game Boy / Game Boy Color, built in | v1.0.2, rev2 build | yes | no |
 | Game Boy Advance, built in | v1.0.2, rev2 build | yes | no |
 | Game Boy / Game Boy Color, MiSTer core | r2.12 | yes | yes |
-| Game Boy Advance, MiSTer core | r2.16 | yes | yes |
+| Game Boy Advance, MiSTer core | r2.17 | yes | yes |
 | Super Nintendo | 0.0.3 r2.7 | yes | yes |
 | NES / Famicom | r2.11 | yes | yes |
 | PC Engine / TurboGrafx-16 | r2.13 | yes | yes |
@@ -35,6 +35,14 @@ choice; checked save reads; the same loudness on every core; a console over USB 
 clock from a PC; four menu themes: Light Game Bub, Dark Game Bub, minuitfranck dark and minuitfranck light. The
 minuitfranck themes take the colors of [minuitfranck.com](https://minuitfranck.com): lavender for the cursor,
 green while a value is being edited, amber on the number under change, and the site's banner on the main menu.
+
+## Save states for 32 MB Game Boy Advance games
+
+The MiSTer GBA core keeps its four save-state slots in the top 2 MB of the handheld's 32 MB memory, so a 32 MB
+game (mostly ROM hacks) had none. Most of those games end in unused fill. Since core r2.17 the slots go in that
+fill, and reads there still return the fill, so the game is unchanged. The number of slots depends on the game
+(Pokemon Heart and Soul v2.0.6: three), and since firmware r2-18d the State Slot list shows only those. Games up
+to 30 MB keep four slots. Tested on the handheld on 29 September.
 
 ## Dock
 
