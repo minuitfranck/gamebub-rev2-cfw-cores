@@ -1,7 +1,7 @@
 # Game Bub rev2: firmware and cores
 
 A rev2 (vertical) [Game Bub](https://github.com/elipsitz/gamebub) running custom firmware and cores loaded from
-the SD card, as of 28 September 2026. The pictures are the handheld's own screenshots, enlarged three times.
+the SD card, as of 29 September 2026. The pictures are the handheld's own screenshots, enlarged three times.
 Not affiliated with, endorsed by or supported by Eli Lipsitz or the Game Bub project.
 
 <p align="center">
@@ -13,18 +13,18 @@ Not affiliated with, endorsed by or supported by Eli Lipsitz or the Game Bub pro
 
 | Part | Version | Battery saves | Save states |
 |---|---|---|---|
-| Firmware | r2-17u, a fork of Game Bub firmware 1.1.0-beta2 | | |
+| Firmware | r2-18a, a fork of Game Bub firmware 1.1.0-beta2 | | |
 | Game Boy / Game Boy Color, built in | v1.0.2, rev2 build | yes | no |
 | Game Boy Advance, built in | v1.0.2, rev2 build | yes | no |
-| Game Boy / Game Boy Color, MiSTer core | r2.11 | yes | yes |
-| Game Boy Advance, MiSTer core | r2.15 | yes | yes |
-| Super Nintendo | 0.0.3 r2.6 | yes | yes |
-| NES / Famicom | r2.10 | yes | yes |
-| PC Engine / TurboGrafx-16 | r2.12 | yes | yes |
-| Mega Drive / Genesis | r2.19 | yes | yes |
-| Neo Geo Pocket Color | r2.9 | yes | yes |
-| WonderSwan / WonderSwan Color | r2.7 | yes | yes |
-| Super Game Boy | r2.8 | yes | yes |
+| Game Boy / Game Boy Color, MiSTer core | r2.12 | yes | yes |
+| Game Boy Advance, MiSTer core | r2.16 | yes | yes |
+| Super Nintendo | 0.0.3 r2.7 | yes | yes |
+| NES / Famicom | r2.11 | yes | yes |
+| PC Engine / TurboGrafx-16 | r2.13 | yes | yes |
+| Mega Drive / Genesis | r2.20 | yes | yes |
+| Neo Geo Pocket Color | r2.10 | yes | yes |
+| WonderSwan / WonderSwan Color | r2.8 | yes | yes |
+| Super Game Boy | r2.9 | yes | yes |
 
 Save state: Home + R. Load state: Home + L. Screenshot: Home + Select. Volume and brightness: Home + a direction.
 2x speed on the MiSTer Game Boy and Game Boy Advance cores: Home + Start. The clock is set from a PC over USB.
@@ -35,6 +35,21 @@ choice; checked save reads; the same loudness on every core; a console over USB 
 clock from a PC; four menu themes: Light Game Bub, Dark Game Bub, minuitfranck dark and minuitfranck light. The
 minuitfranck themes take the colors of [minuitfranck.com](https://minuitfranck.com): lavender for the cursor,
 green while a value is being edited, amber on the number under change, and the site's banner on the main menu.
+
+## Dock
+
+The production Game Bub dock (rev4.1) is made for the rev4. Preparation for using it with the rev2, 28 and
+29 September:
+
+- HDMI: the rev2 sends its four HDMI lanes on other USB-C pins than the dock reads. The FPGA pin map now follows
+  the dock's order and polarity, worked out from the board files. The boot design and every core were rebuilt
+  with it; the handheld's own screen does not use these pins. HDMI output is untested until a dock is on hand.
+- USB: the dock talks to the handheld with USB requests the firmware already handles. Firmware r2-18a adds
+  Settings > Dock (Swap A/B and X/Y) and the dock gamepad's A/B fix, both from upstream.
+- Tested without a dock: a computer plays the dock over USB. Dock mode turns the LCD off, the menus keep
+  rendering for HDMI, and a controller on the computer drives the menus.
+- Enclosure: a 3D-printed top with the slot widened for the rev2's shell, and a stand plate for stability. Not
+  yet test-fitted.
 
 ## Menus
 
