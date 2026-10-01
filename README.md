@@ -11,20 +11,20 @@ Not affiliated with, endorsed by or supported by Eli Lipsitz or the Game Bub pro
 
 ## On the device
 
-| Part | Version | Battery saves | Save states |
-|---|---|---|---|
-| Firmware | r2-18d, a fork of Game Bub firmware 1.1.0-beta2 | | |
-| Game Boy / Game Boy Color, built in | v1.0.2, rev2 build | yes | no |
-| Game Boy Advance, built in | v1.0.2, rev2 build | yes | no |
-| Game Boy / Game Boy Color, MiSTer core | r2.12 | yes | yes |
-| Game Boy Advance, MiSTer core | r2.17 | yes | yes |
-| Super Nintendo | 0.0.3 r2.7 | yes | yes |
-| NES / Famicom | r2.11 | yes | yes |
-| PC Engine / TurboGrafx-16 | r2.13 | yes | yes |
-| Mega Drive / Genesis | r2.20 | yes | yes |
-| Neo Geo Pocket Color | r2.10 | yes | yes |
-| WonderSwan / WonderSwan Color | r2.8 | yes | yes |
-| Super Game Boy | r2.9 | yes | yes |
+| Part | Version | Battery saves | Save states | 2x speed |
+|---|---|---|---|---|
+| Firmware | r2-18d, a fork of Game Bub firmware 1.1.0-beta2 | | | |
+| Game Boy / Game Boy Color, built in | v1.0.2, rev2 build | yes | no | no |
+| Game Boy Advance, built in | v1.0.2, rev2 build | yes | no | no |
+| Game Boy / Game Boy Color, MiSTer core | r2.12 | yes | yes | yes |
+| Game Boy Advance, MiSTer core | r2.17 | yes | yes | yes |
+| Super Nintendo | 0.0.3 r2.7 | yes | yes | no |
+| NES / Famicom | r2.11 | yes | yes | no |
+| PC Engine / TurboGrafx-16 | r2.13 | yes | yes | no |
+| Mega Drive / Genesis | r2.20 | yes | yes | no |
+| Neo Geo Pocket Color | r2.10 | yes | yes | no |
+| WonderSwan / WonderSwan Color | r2.8 | yes | yes | no |
+| Super Game Boy | r2.9 | yes | yes | no |
 
 Save state: Home + R. Load state: Home + L. Screenshot: Home + Select. Volume and brightness: Home + a direction.
 2x speed on the MiSTer Game Boy and Game Boy Advance cores: Home + Start. The clock is set from a PC over USB.
