@@ -1,7 +1,7 @@
 # Game Bub rev2: firmware and cores
 
 A rev2 (vertical) [Game Bub](https://github.com/elipsitz/gamebub) running custom firmware and cores loaded from
-the SD card, as of 29 September 2026. The pictures are the handheld's own screenshots, enlarged three times.
+the SD card, as of 9 October 2026. The pictures are the handheld's own screenshots, enlarged three times.
 Not affiliated with, endorsed by or supported by Eli Lipsitz or the Game Bub project.
 
 <p align="center">
@@ -13,28 +13,46 @@ Not affiliated with, endorsed by or supported by Eli Lipsitz or the Game Bub pro
 
 | Part | Version | Battery saves | Save states | 2x speed |
 |---|---|---|---|---|
-| Firmware | r2-18d, a fork of Game Bub firmware 1.1.0-beta2 | | | |
+| Firmware | r2-18h, a fork of Game Bub firmware 1.1.0-beta2 | | | |
 | Game Boy / Game Boy Color, built in | v1.0.2, rev2 build | yes | no | no |
 | Game Boy Advance, built in | v1.0.2, rev2 build | yes | no | no |
-| Game Boy / Game Boy Color, MiSTer core | r2.12 | yes | yes | yes |
-| Game Boy Advance, MiSTer core | r2.17 | yes | yes | yes |
-| Super Nintendo | 0.0.3 r2.7 | yes | yes | no |
-| NES / Famicom | r2.11 | yes | yes | no |
-| PC Engine / TurboGrafx-16 | r2.13 | yes | yes | no |
-| Mega Drive / Genesis | r2.20 | yes | yes | no |
-| Neo Geo Pocket Color | r2.10 | yes | yes | no |
-| WonderSwan / WonderSwan Color | r2.8 | yes | yes | no |
-| Super Game Boy | r2.9 | yes | yes | no |
+| Game Boy / Game Boy Color, MiSTer core | r2.13 | yes | yes | yes |
+| Game Boy Advance, MiSTer core | r2.18 | yes | yes | yes |
+| Super Nintendo | 0.0.3 r2.9 | yes | yes | no |
+| NES / Famicom | r2.13 | yes | yes | no |
+| PC Engine / TurboGrafx-16 | r2.14 | yes | yes | no |
+| Mega Drive / Genesis | r2.22 | yes | yes | no |
+| Neo Geo Pocket Color | r2.11 | yes | yes | no |
+| WonderSwan / WonderSwan Color | r2.10 | yes | yes | no |
+| Super Game Boy | r2.10 | yes | yes | no |
+| Game Gear | r2.2 | yes | yes | no |
+| Master System / SG-1000 | r2.2 | yes | yes | no |
+| Pokemon Mini | r2.3 | yes | no | no |
 
 Save state: Home + R. Load state: Home + L. Screenshot: Home + Select. Volume and brightness: Home + a direction.
 2x speed on the MiSTer Game Boy and Game Boy Advance cores: Home + Start. The clock is set from a PC over USB.
 
 Beyond Game Bub firmware 1.1.0-beta2: cores loaded from the SD card, each with a settings page; hotkeys for save
-states, 2x speed and screenshots, each of which can be switched off; rumble levels; auto power off; a GBA BIOS
+states, 2x speed and screenshots, each of which can be switched off; rumble levels, with a two-second sample and an
+in-game Off / Low / High row on the cores that use rumble; auto power off; a GBA BIOS
 choice; checked save reads; the same loudness on every core; a console over USB for tests and for setting the
 clock from a PC; four menu themes: Light Game Bub, Dark Game Bub, minuitfranck dark and minuitfranck light. The
 minuitfranck themes take the colors of [minuitfranck.com](https://minuitfranck.com): lavender for the cursor,
 green while a value is being edited, amber on the number under change, and the site's banner on the main menu.
+
+## 9 October: three more cores, a coprocessor fix, 50 Hz games
+
+- Game Gear, Master System / SG-1000 (one MiSTer core, two entries; save states) and Pokemon Mini (MiSTer core;
+  rumble, face buttons, power on a held Select) load from the card since 8 October.
+- Super Nintendo: the DSP and Cx4 coprocessor ROM images were byte-reversed in every build before 0.0.3 r2.8.
+  Pilotwings runs now; Super Mario Kart and the Cx4 games are still to be retried.
+- Save files: the firmware no longer truncates a save file when a core answers 0 bytes at exit; Super Game Boy
+  states are `<game>.sgb.ss`, so they no longer collide with the MiSTer Game Boy core's `<game>.ss`.
+- 50 Hz (PAL) games on the Mega Drive, SNES and NES cores: the LCD driver keeps a second scan line for the 50 Hz
+  frame, so every picture is shown once instead of one in five twice (checked in simulation; the handheld check is
+  pending).
+- Rumble: Settings > General, with a two-second sample at the chosen level; an in-game Off / Low / High row on the
+  cores that use rumble.
 
 ## Save states for 32 MB Game Boy Advance games
 
@@ -227,6 +245,12 @@ Run from a cartridge in the slot.
   Robert Peip (FPGAzumSpass). GPL-2.0.
 - Game Boy Advance (MiSTer core): the MiSTer [GBA core](https://github.com/MiSTer-devel/GBA_MiSTer) by Robert Peip
   (FPGAzumSpass). GPL-2.0.
+- Game Gear and Master System / SG-1000: the MiSTer [SMS core](https://github.com/MiSTer-devel/SMS_MiSTer), a port
+  of Ben's Master System implementation for the Papilio (fpga-hacks.blogspot.de), with the MiST / MiSTer ports and
+  features by [Sorgelig](https://github.com/sorgelig) and the MiSTer contributors; Z80 by Daniel Wallner (T80),
+  SN76489 by Jose Tejada Gomez (jt89), YM2413 by the VM2413 project. GPL-2.0-or-later.
+- Pokemon Mini: the MiSTer [Pokemon Mini core](https://github.com/MiSTer-devel/PokemonMini_MiSTer) by
+  [Grieverheart](https://github.com/Grieverheart), with the free BIOS by team pokeme. GPL-2.0.
 
 Each core contains further work credited in its own source files and license headers: CPU cores, sound chips and
 helper modules.
