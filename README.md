@@ -196,6 +196,8 @@ Run from a cartridge in the slot.
 
 - Mega Drive / Genesis core: [gamebub-rev2-mega-drive](https://github.com/minuitfranck/gamebub-rev2-mega-drive)
   (source, documentation and builds).
+- NES / Famicom core: [gamebub-rev2-nes](https://github.com/minuitfranck/gamebub-rev2-nes) (source, documentation
+  and builds).
 - The firmware and the other cores are not published.
 
 ## Credits
