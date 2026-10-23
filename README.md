@@ -40,6 +40,25 @@ choice; checked save reads; the same loudness on every core; a console over USB 
 clock from a PC; four menu themes: Light Game Bub, Dark Game Bub, minuitfranck dark and minuitfranck light. The
 minuitfranck themes take the colors of [minuitfranck.com](https://minuitfranck.com): lavender for the cursor,
 green while a value is being edited, amber on the number under change, and the site's banner on the main menu.
+Since October: Settings > Dock, TV rows in each core's settings, the menus on the handheld's screen while docked
+with a clock during a game, and Tools > Wi-Fi File Transfer (the card in a browser over the home network).
+
+## 22 and 23 October: the dock, and one tree for everything
+
+- Dock day. The rev2 in the production dock: the menus and the games on the TV over HDMI, with the lane order
+  worked out in September. The TV's overscan cuts the edges in its Normal picture mode; a screen calibration tool
+  is planned.
+- Dock firmware 1.0.6, a fork of the dock's 1.0.1: DualShock 4 class pads (a Joypad OS GameCube adapter among
+  them), a silent pad re-armed by a watchdog, and a control transfer stuck 300 ms aborted. Bluetooth pads pair
+  through the dock's rear button.
+- Undocking mid-game froze the picture: the HDMI clock was cut 7 system clocks after the undock, too early for the
+  clock mux. Every core and the boot design were rebuilt with the clock kept 4095 clocks (the set in the table).
+- Firmware r2-19w to r2-20a: the menus mirrored on the handheld's screen while docked, a clock with the game's
+  name during a game, the in-game settings showing the TV rows while docked and the LCD rows otherwise, auto power
+  off in the dock too, and a four times faster link to the handheld's screen.
+- One repository: the firmware and every core, which had lived on one branch each, share one tree with one
+  framework. Every core was rebuilt from it, to be installed after a hardware check. The two public core
+  repositories are archived (see Source).
 
 ## 9 October: three more cores, a coprocessor fix, 50 Hz games
 
@@ -65,18 +84,17 @@ to 30 MB keep four slots. Tested on the handheld on 29 September.
 
 ## Dock
 
-The production Game Bub dock (rev4.1) is made for the rev4. Preparation for using it with the rev2, 28 and
-29 September:
+The production dock (rev4.1, made for the rev4) with the rev2, since 22 October:
 
-- HDMI: the rev2 sends its four HDMI lanes on other USB-C pins than the dock reads. The FPGA pin map now follows
-  the dock's order and polarity, worked out from the board files. The boot design and every core were rebuilt
-  with it; the handheld's own screen does not use these pins. HDMI output is untested until a dock is on hand.
-- USB: the dock talks to the handheld with USB requests the firmware already handles. Firmware r2-18a adds
-  Settings > Dock (Swap A/B and X/Y) and the dock gamepad's A/B fix, both from upstream.
-- Tested without a dock: a computer plays the dock over USB. Dock mode turns the LCD off, the menus keep
-  rendering for HDMI, and a controller on the computer drives the menus.
-- Enclosure: a 3D-printed top with the slot widened for the rev2's shell, and a stand plate for stability. Not
-  yet test-fitted.
+- HDMI: the rev2's four lanes on the USB-C pins in the dock's order and polarity, worked out from the board files in
+  September and confirmed on the TV. Each core's settings carry TV Scaling (integer, fit, 4:3), TV Scanlines and TV
+  Mode (480p, or 576p for 50 Hz games). The TV's own overscan is the open item.
+- Controllers: the dock firmware fork 1.0.6 drives DualShock 4 class pads and a Joypad OS GameCube adapter;
+  Bluetooth pads pair with the dock's rear button. Settings > Dock: button swap, pause on dock and undock, shoulder
+  buttons, the handheld's own buttons while docked.
+- The handheld's screen while docked shows the menus, and a clock with the game's name during a game. Lifting the
+  handheld out mid-game continues the game on its own screen.
+- Enclosure: a 3D-printed top with the slot widened for the rev2's shell, and a stand plate.
 
 ## Menus
 
@@ -193,6 +211,15 @@ Run from a cartridge in the slot.
 | <img src="images/sgb-kirbys-dream-land-2.png" width="100%" alt="Kirby's Dream Land 2"> | <img src="images/sgb-bomberman.png" width="100%" alt="Bomberman"> | <img src="images/sgb-pokemon-scarlet.png" width="100%" alt="Pokemon Scarlet (fan game)"> |
 | Kirby's Dream Land 2 | Bomberman | Pokemon Scarlet (fan game) |
 
+## AI disclosure
+
+This project was made with an AI assistant. **Claude** (Anthropic) wrote the ports' Game Bub glue, the changes to
+the vendored cores, the framework and firmware additions, the simulation benches, the build and card scripts and
+the documents, working from the direction of minuitfranck, who chose what to build, ran every build on a rev2
+handheld and decided what was kept. The cores, the framework and the firmware this work started from were written
+by their authors named under Credits. Commits carry a `Co-Authored-By: Claude` line. Treat the project's own code
+as reviewed by testing on one handheld and by simulation, not by a second engineer.
+
 ## Source
 
 The firmware and every core are developed in one private repository that holds them as one tree (the rev2
@@ -266,7 +293,7 @@ helper modules.
 
 **Other files on the card**
 
-- [emibios](https://github.com/coolbho3k/emibios) release 0.1.5, an open replacement Game Boy Advance BIOS by coolbho3k
+- [emibios](https://github.com/coolbho3k/emibios) release 0.2.0, an open replacement Game Boy Advance BIOS by coolbho3k
   (LGPL-3.0); it boots games from the card and cartridges.
 - crosi12's SGB overlay pack (v1.0), turned into Super Game Boy border files.
 
