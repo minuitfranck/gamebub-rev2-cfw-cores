@@ -30,57 +30,32 @@ Not affiliated with, endorsed by or supported by Eli Lipsitz or the Game Bub pro
 | Master System / SG-1000 | r2.5 | yes | yes | no |
 | Pokemon Mini | r2.7 | yes | no | no |
 
-Save state: Home + R. Load state: Home + L. Screenshot: Home + Select. Volume and brightness: Home + a direction.
-2x speed on the MiSTer Game Boy and Game Boy Advance cores: Home + Start. The clock is set from a PC over USB.
+## What the firmware adds
 
-Beyond Game Bub firmware 1.1.0-beta2: cores loaded from the SD card, each with a settings page; hotkeys for save
-states, 2x speed and screenshots, each of which can be switched off; rumble levels, with a two-second sample and an
-in-game Off / Low / High row on the cores that use rumble; auto power off; a GBA BIOS
-choice; checked save reads; the same loudness on every core; a console over USB for tests and for setting the
-clock from a PC; four menu themes: Light Game Bub, Dark Game Bub, minuitfranck dark and minuitfranck light. The
-minuitfranck themes take the colors of [minuitfranck.com](https://minuitfranck.com): lavender for the cursor,
-green while a value is being edited, amber on the number under change, and the site's banner on the main menu.
-Since October: Settings > Dock, TV rows in each core's settings, the menus on the handheld's screen while docked
-with a clock during a game, and Tools > Wi-Fi File Transfer (the card in a browser over the home network).
+Game Bub firmware 1.1.0-beta2 with these additions:
 
-## 22 and 23 October: the dock, and one tree for everything
-
-- Dock day. The rev2 in the production dock: the menus and the games on the TV over HDMI, with the lane order
-  worked out in September. The TV's overscan cuts the edges in its Normal picture mode; a screen calibration tool
-  is planned.
-- Dock firmware 1.0.6, a fork of the dock's 1.0.1: DualShock 4 class pads (a Joypad OS GameCube adapter among
-  them), a silent pad re-armed by a watchdog, and a control transfer stuck 300 ms aborted. Bluetooth pads pair
-  through the dock's rear button.
-- Undocking mid-game froze the picture: the HDMI clock was cut 7 system clocks after the undock, too early for the
-  clock mux. Every core and the boot design were rebuilt with the clock kept 4095 clocks (the set in the table).
-- Firmware r2-19w to r2-20a: the menus mirrored on the handheld's screen while docked, a clock with the game's
-  name during a game, the in-game settings showing the TV rows while docked and the LCD rows otherwise, auto power
-  off in the dock too, and a four times faster link to the handheld's screen.
-- One repository: the firmware and every core, which had lived on one branch each, share one tree with one
-  framework. Every core was rebuilt from it, to be installed after a hardware check. The two public core
-  repositories are archived (see Source).
-
-## 9 October: three more cores, a coprocessor fix, 50 Hz games
-
-- Game Gear, Master System / SG-1000 (one MiSTer core, two entries; save states) and Pokemon Mini (MiSTer core;
-  rumble, face buttons, power on a held Select) load from the card since 8 October.
-- Super Nintendo: the DSP and Cx4 coprocessor ROM images were byte-reversed in every build before 0.0.3 r2.8.
-  Pilotwings runs now; Super Mario Kart and the Cx4 games are still to be retried.
-- Save files: the firmware no longer truncates a save file when a core answers 0 bytes at exit; Super Game Boy
-  states are `<game>.sgb.ss`, so they no longer collide with the MiSTer Game Boy core's `<game>.ss`.
-- 50 Hz (PAL) games on the Mega Drive, SNES and NES cores: the LCD driver keeps a second scan line for the 50 Hz
-  frame, so every picture is shown once instead of one in five twice (checked in simulation; the handheld check is
-  pending).
-- Rumble: Settings > General, with a two-second sample at the chosen level; an in-game Off / Low / High row on the
-  cores that use rumble.
-
-## Save states for 32 MB Game Boy Advance games
-
-The MiSTer GBA core keeps its four save-state slots in the top 2 MB of the handheld's 32 MB memory, so a 32 MB
-game (mostly ROM hacks) had none. Most of those games end in unused fill. Since core r2.17 the slots go in that
-fill, and reads there still return the fill, so the game is unchanged. The number of slots depends on the game
-(Pokemon Heart and Soul v2.0.6: three), and since firmware r2-18d the State Slot list shows only those. Games up
-to 30 MB keep four slots. Tested on the handheld on 29 September.
+- **Cores from the SD card.** Each core has its own settings page in the Home menu over a game, and a page under
+  Settings > Cores. Settings a core does not have are not shown; while docked the TV rows take the place of the
+  screen rows.
+- **Hotkeys**, each of which can be switched off: save state Home + R, load state Home + L, screenshot Home +
+  Select, volume and brightness Home + a direction, 2x speed Home + Start on the MiSTer Game Boy and Game Boy
+  Advance cores.
+- **Saves and states.** Battery saves are written next to the game at exit and on power off; a save file is never
+  truncated when a core answers nothing; a `.sav.bak` keeps the previous save. Save states have four slots per game
+  (the MiSTer GBA core keeps them in the unused fill of 32 MB games, with as many slots as the fill allows); the
+  Super Game Boy's states are `<game>.sgb.ss`, apart from the MiSTer Game Boy core's `<game>.ss`.
+- **50 Hz games** on the Mega Drive, SNES and NES cores: the screen driver paces a second, longer scan line to the
+  50 Hz frame, so every picture is shown once.
+- **Rumble**: Settings > General with a two-second sample at the chosen level, and an in-game Off / Low / High row
+  on the cores that use it.
+- **Sound** at the same loudness on every core; a GBA BIOS choice; auto power off (in the dock too); checked save
+  reads; a console over USB for tests and for setting the clock from a PC.
+- **Wi-Fi file transfer**: Tools > Wi-Fi File Transfer puts the card in a browser over the home network.
+- **Four menu themes**: Light Game Bub, Dark Game Bub, minuitfranck dark and minuitfranck light. The minuitfranck
+  themes take the colors of [minuitfranck.com](https://minuitfranck.com): lavender for the cursor, green while a
+  value is being edited, amber on the number under change, and the site's banner on the main menu.
+- **One source tree.** The firmware and every core are developed together in one private repository with one FPGA
+  framework (see Source).
 
 ## Dock
 
