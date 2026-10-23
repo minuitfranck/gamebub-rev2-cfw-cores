@@ -1,7 +1,7 @@
 # Game Bub rev2: firmware and cores
 
 A rev2 (vertical) [Game Bub](https://github.com/elipsitz/gamebub) running custom firmware and cores loaded from
-the SD card, as of 9 October 2026. The pictures are the handheld's own screenshots, enlarged three times.
+the SD card, as of 23 October 2026. The pictures are the handheld's own screenshots, enlarged three times.
 Not affiliated with, endorsed by or supported by Eli Lipsitz or the Game Bub project.
 
 <p align="center">
@@ -13,21 +13,22 @@ Not affiliated with, endorsed by or supported by Eli Lipsitz or the Game Bub pro
 
 | Part | Version | Battery saves | Save states | 2x speed |
 |---|---|---|---|---|
-| Firmware | r2-18h, a fork of Game Bub firmware 1.1.0-beta2 | | | |
-| Game Boy / Game Boy Color, built in | v1.0.2, rev2 build | yes | no | no |
-| Game Boy Advance, built in | v1.0.2, rev2 build | yes | no | no |
-| Game Boy / Game Boy Color, MiSTer core | r2.13 | yes | yes | yes |
-| Game Boy Advance, MiSTer core | r2.18 | yes | yes | yes |
-| Super Nintendo | 0.0.3 r2.9 | yes | yes | no |
-| NES / Famicom | r2.13 | yes | yes | no |
-| PC Engine / TurboGrafx-16 | r2.14 | yes | yes | no |
-| Mega Drive / Genesis | r2.22 | yes | yes | no |
-| Neo Geo Pocket Color | r2.11 | yes | yes | no |
-| WonderSwan / WonderSwan Color | r2.10 | yes | yes | no |
-| Super Game Boy | r2.10 | yes | yes | no |
-| Game Gear | r2.2 | yes | yes | no |
-| Master System / SG-1000 | r2.2 | yes | yes | no |
-| Pokemon Mini | r2.3 | yes | no | no |
+| Firmware | r2-20a, a fork of Game Bub firmware 1.1.0-beta2 | | | |
+| Dock firmware | 1.0.6, a fork of the dock firmware 1.0.1 (DualShock 4 class pads) | | | |
+| Game Boy / Game Boy Color, built in | rev2 build of 23 October (accuracy fixes, save states) | yes | yes | no |
+| Game Boy Advance, built in | rev2 build of 23 October | yes | no | no |
+| Game Boy / Game Boy Color, MiSTer core | r2.17 | yes | yes | yes |
+| Game Boy Advance, MiSTer core | r2.21 | yes | yes | yes |
+| Super Nintendo | 0.0.3 r2.12 | yes | yes | no |
+| NES / Famicom | r2.17 | yes | yes | no |
+| PC Engine / TurboGrafx-16 | r2.18 | yes | yes | no |
+| Mega Drive / Genesis | r2.25 | yes | yes | no |
+| Neo Geo Pocket Color | r2.14 | yes | yes | no |
+| WonderSwan / WonderSwan Color | r2.15 | yes | yes | no |
+| Super Game Boy | r2.14 | yes | yes | no |
+| Game Gear | r2.6 | yes | yes | no |
+| Master System / SG-1000 | r2.5 | yes | yes | no |
+| Pokemon Mini | r2.7 | yes | no | no |
 
 Save state: Home + R. Load state: Home + L. Screenshot: Home + Select. Volume and brightness: Home + a direction.
 2x speed on the MiSTer Game Boy and Game Boy Advance cores: Home + Start. The clock is set from a PC over USB.
@@ -194,11 +195,17 @@ Run from a cartridge in the slot.
 
 ## Source
 
+The firmware and every core are developed in one private repository that holds them as one tree (the rev2
+firmware line, the FPGA framework, the cores, the guide and the notes). The two repositories that published single
+cores are archived at their last releases and stay readable:
+
 - Mega Drive / Genesis core: [gamebub-rev2-mega-drive](https://github.com/minuitfranck/gamebub-rev2-mega-drive)
-  (source, documentation and builds).
-- NES / Famicom core: [gamebub-rev2-nes](https://github.com/minuitfranck/gamebub-rev2-nes) (source, documentation
-  and builds).
-- The firmware and the other cores are not published.
+  (release r2.22, archived 23 October 2026).
+- NES / Famicom core: [gamebub-rev2-nes](https://github.com/minuitfranck/gamebub-rev2-nes) (release r2.13, archived
+  23 October 2026).
+
+Each core keeps the license of the machine it is built from (see Credits); the people who receive the packages
+receive the matching source with them.
 
 ## Credits
 
