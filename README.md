@@ -1,7 +1,7 @@
 # Game Bub rev2: firmware and cores
 
 A rev2 (vertical) [Game Bub](https://github.com/elipsitz/gamebub) running custom firmware and cores loaded from
-the SD card, as of 23 October 2026. The pictures are the handheld's own screenshots, enlarged three times.
+the SD card, as of 29 October 2026. The pictures are the handheld's own screenshots, enlarged three times.
 Not affiliated with, endorsed by or supported by Eli Lipsitz or the Game Bub project.
 
 <p align="center">
@@ -13,22 +13,23 @@ Not affiliated with, endorsed by or supported by Eli Lipsitz or the Game Bub pro
 
 | Part | Version | Battery saves | Save states | 2x speed |
 |---|---|---|---|---|
-| Firmware | r2-20a, a fork of Game Bub firmware 1.1.0-beta2 | | | |
-| Dock firmware | 1.0.6, a fork of the dock firmware 1.0.1 (DualShock 4 class pads) | | | |
-| Game Boy / Game Boy Color, built in | rev2 build of 23 October (accuracy fixes, save states) | yes | yes | no |
-| Game Boy Advance, built in | rev2 build of 23 October | yes | no | no |
-| Game Boy / Game Boy Color, MiSTer core | r2.17 | yes | yes | yes |
-| Game Boy Advance, MiSTer core | r2.21 | yes | yes | yes |
-| Super Nintendo | 0.0.3 r2.12 | yes | yes | no |
-| NES / Famicom | r2.17 | yes | yes | no |
-| PC Engine / TurboGrafx-16 | r2.18 | yes | yes | no |
-| Mega Drive / Genesis | r2.25 | yes | yes | no |
-| Neo Geo Pocket Color | r2.14 | yes | yes | no |
-| WonderSwan / WonderSwan Color | r2.15 | yes | yes | no |
-| Super Game Boy | r2.14 | yes | yes | no |
-| Game Gear | r2.6 | yes | yes | no |
-| Master System / SG-1000 | r2.5 | yes | yes | no |
-| Pokemon Mini | r2.7 | yes | no | no |
+| Firmware | r2-22f, a fork of Game Bub firmware 1.1.0-beta2 with 1.0.3 merged | | | |
+| Dock firmware | 1.0.17, a fork of the dock firmware 1.0.2 (DualShock 4 class pads, rumble, keyboards, mice) | | | |
+| Game Boy / Game Boy Color, built in | rev2 build of 28 October (accuracy fixes, save states) | yes | yes | no |
+| Game Boy Advance, built in | rev2 build of 28 October | yes | no | no |
+| Game Boy / Game Boy Color, MiSTer core | r2.19 | yes | yes | yes |
+| Game Boy Advance, MiSTer core | r2.23 | yes | yes | yes |
+| Super Nintendo | 0.0.3 r2.15 | yes | yes | no |
+| NES / Famicom | r2.19 | yes | yes | no |
+| PC Engine / TurboGrafx-16 | r2.20 | yes | yes | no |
+| Mega Drive / Genesis | r2.27 | yes | yes | no |
+| Neo Geo Pocket Color | r2.16 | yes | yes | no |
+| WonderSwan / WonderSwan Color | r2.17 | yes | yes | no |
+| Super Game Boy | r2.16 | yes | yes | no |
+| Game Gear | r2.8 | yes | yes | no |
+| Master System / SG-1000 | r2.7 | yes | yes | no |
+| Pokemon Mini | r2.9 | yes | no | no |
+| MSX2+ | r2.8 (cartridges; a keyboard and a mouse through the dock; floppy disk images under test) | no | no | no |
 
 ## What the firmware adds
 
@@ -51,6 +52,8 @@ Game Bub firmware 1.1.0-beta2 with these additions:
 - **Sound** at the same loudness on every core; a GBA BIOS choice; auto power off (in the dock too); checked save
   reads; a console over USB for tests and for setting the clock from a PC.
 - **Wi-Fi file transfer**: Tools > Wi-Fi File Transfer puts the card in a browser over the home network.
+- **File browser**: Start leaves an optional file out when a core allows it, so the MSX2+ boots to BASIC without a
+  cartridge; a dock keyboard moves through every menu.
 - **Four menu themes**: Light Game Bub, Dark Game Bub, minuitfranck dark and minuitfranck light. The minuitfranck
   themes take the colors of [minuitfranck.com](https://minuitfranck.com): lavender for the cursor, green while a
   value is being edited, amber on the number under change, and the site's banner on the main menu.
@@ -64,9 +67,12 @@ The production dock (rev4.1, made for the rev4) with the rev2, since 22 October:
 - HDMI: the rev2's four lanes on the USB-C pins in the dock's order and polarity, worked out from the board files in
   September and confirmed on the TV. Each core's settings carry TV Scaling (integer, fit, 4:3), TV Scanlines and TV
   Mode (480p, or 576p for 50 Hz games). The TV's own overscan is the open item.
-- Controllers: the dock firmware fork 1.0.6 drives DualShock 4 class pads and a Joypad OS GameCube adapter;
+- Controllers: the dock firmware fork (1.0.17) drives DualShock 4 class pads and a Joypad OS GameCube adapter;
   Bluetooth pads pair with the dock's rear button. Settings > Dock: button swap, pause on dock and undock, shoulder
-  buttons, the handheld's own buttons while docked.
+  buttons, the handheld's own buttons while docked. Rumble reaches the pads: XInput and DualShock 4 class pads over
+  USB, Bluetooth pads through Bluepad32, Switch-mode pads with full strength.
+- Keyboards and mice: a USB or Bluetooth keyboard on the dock moves through the menus (arrows, Enter, Escape, Page
+  Up and Down) and types into the MSX2+ core; a mouse reaches the cores that take one.
 - The handheld's screen while docked shows the menus, and a clock with the game's name during a game. Lifting the
   handheld out mid-game continues the game on its own screen.
 - Enclosure: a 3D-printed top with the slot widened for the rev2's shell, and a stand plate.
